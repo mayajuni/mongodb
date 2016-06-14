@@ -36,16 +36,25 @@ exec(`chmod 777 ./datas`, (error) => {
 });
 
 console.log(`3. key 파일 생성`);
-exec(`openssl rand -base64 741 > ./key/mongodb-keyfile`, (error) => {
-    if(error) {
-        console.error(error);
-        return;
-    }
-
+const chmodKey = () => {
+    console.log(`4. key 파일 권한 변경`);
     exec(`chmod 600 ./key/mongodb-keyfile`, (error) => {
         if(error) {
             console.error(error);
             return;
         }
     });
-});
+}
+
+if(!fs.existsSync(`./key/mongodb-keyfile`)) {
+    exec(`openssl rand -base64 741 > ./key/mongodb-keyfile`, (error) => {
+        if(error) {
+            console.error(error);
+            return;
+        }
+
+        chmodKey();
+    });
+}else {
+    chmodKey()
+}
