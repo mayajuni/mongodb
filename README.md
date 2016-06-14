@@ -1,13 +1,12 @@
-﻿# mongodb
+# mongodb
  - 매번 만들기 귀찮아서 그냥 심심풀이로 만든었다.
  
 ##설치
  사용전 mongodb와 node가 설치되어 있어야된다.
- 
-구분|URL
--|-
-mongodb|https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
-nodeJs|https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora
+ - mongodb
+     - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/ 
+ - nodeJs
+    - https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora
 
 ## 실행
 ```
