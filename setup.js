@@ -42,7 +42,7 @@ exec(`openssl rand -base64 741 > ./key/mongodb-keyfile`, (error) => {
         return;
     }
 
-    exec(`chmod 600 mongodb-keyfile`, (error) => {
+    exec(`chmod 600 ./key/mongodb-keyfile`, (error) => {
         if(error) {
             console.error(error);
             return;
