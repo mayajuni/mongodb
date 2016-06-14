@@ -44,7 +44,7 @@ const chmodKey = () => {
             return;
         }
     });
-}
+};
 
 if(!fs.existsSync(`./key/mongodb-keyfile`)) {
     exec(`openssl rand -base64 741 > ./key/mongodb-keyfile`, (error) => {

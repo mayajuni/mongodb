@@ -10,13 +10,24 @@
 
 ## 실행
 ```
-node ./setup.js
+1. 공통
+    - npm install
+2. setup
+    - node ./setup.js
+3. 스캐쥴러 시작
+    - pm2 start changeLog.js
+    - forever start changeLog.js
 ```
 
-## 하는일
-    1. 폴더 생성
-    2. 권한 변경(datas)
-    3. key 파일 생성 및 권한 변경
+## 기능
+    1. setup.js
+        - 폴더 생성
+        - 권한 변경(datas)
+        - key 파일 생성 및 권한 변경
+    2. changeLog.js
+        - log file을 날짜별로 변경 하는 스캐쥴러
+          (ex. mongod.log -> 2016-01-01.log)
+        - 매일 0시 0분에 시작
 
 ##구조
 ```javascript

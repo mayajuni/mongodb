@@ -1,0 +1,16 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "authors": "Dongjun Kwon <mayajuni10@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayajuni/mongodb.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayajuni/mongodb/issues"
+  },
+  "dependencies": {
+    "node-schedule": "^1.1.0"
+  }
+}
