@@ -26,5 +26,5 @@ node ./setup.js
 ├── key       <- 암호화 key 파일이 있는 폴더
         └── mongodb-keyfile  <- 암호화 key 파일
 ├── logs      <- logs 파일이 있는 폴더
-├── pid       <- pid 파일이 있는 폴더
+└── pid       <- pid 파일이 있는 폴더
 ```
